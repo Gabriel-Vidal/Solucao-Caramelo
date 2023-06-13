@@ -21,20 +21,20 @@ class SolucaoCaramelo:
         self.pessoas = []
 
     def cadastrar_animal(self):
-        tipo = input("Digite o tipo do animal: ")
+        tipo = self.ler_string("Digite o tipo do animal: ")
         idade = self.ler_inteiro("Digite a idade aproximada do animal: ")
-        cor = input("Digite a cor do animal: ")
-        porte = input("Digite o porte do animal: ")
-        particularidade = input("Digite a particularidade do animal: ")
+        cor = self.ler_string("Digite a cor do animal: ")
+        porte = self.ler_string("Digite o porte do animal: ")
+        particularidade = self.ler_string("Digite a particularidade do animal: ")
 
         animal = Animal(tipo, idade, cor, porte, particularidade)
         self.animais.append(animal)
 
     def cadastrar_pessoa(self):
-        nome = input("Digite o nome da pessoa: ")
-        telefone = input("Digite o telefone da pessoa: ")
-        especie_interesse = input("Digite a espécie de interesse para adoção: ")
-        preferencias = input("Digite as preferências de animal: ")
+        nome = self.ler_string("Digite o nome da pessoa: ")
+        telefone = self.ler_string("Digite o telefone da pessoa: ")
+        especie_interesse = self.ler_string("Digite a espécie de interesse para adoção: ")
+        preferencias = self.ler_string("Digite as preferências de animal: ")
 
         pessoa = Pessoa(nome, telefone, especie_interesse, preferencias)
         self.pessoas.append(pessoa)
@@ -47,3 +47,11 @@ class SolucaoCaramelo:
                 return valor
             except ValueError:
                 print("Valor inválido. Digite um número inteiro.")
+
+    @staticmethod
+    def ler_string(mensagem):
+        while True:
+            valor = input(mensagem)
+            if valor:
+                return valor
+            print("Valor inválido. Digite uma string não vazia.")
