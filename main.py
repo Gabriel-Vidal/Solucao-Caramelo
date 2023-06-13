@@ -13,3 +13,9 @@ class Pessoa:
         self.telefone = telefone
         self.especie_interesse = especie_interesse
         self.preferencias = preferencias
+
+
+class SolucaoCaramelo:
+    def __init__(self):
+        self.animais = []
+        self.pessoas = []
