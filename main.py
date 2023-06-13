@@ -22,7 +22,7 @@ class SolucaoCaramelo:
 
     def cadastrar_animal(self):
         tipo = input("Digite o tipo do animal: ")
-        idade = input("Digite a idade aproximada do animal: ")
+        idade = self.ler_inteiro("Digite a idade aproximada do animal: ")
         cor = input("Digite a cor do animal: ")
         porte = input("Digite o porte do animal: ")
         particularidade = input("Digite a particularidade do animal: ")
@@ -38,3 +38,12 @@ class SolucaoCaramelo:
 
         pessoa = Pessoa(nome, telefone, especie_interesse, preferencias)
         self.pessoas.append(pessoa)
+
+    @staticmethod
+    def ler_inteiro(mensagem):
+        while True:
+            try:
+                valor = int(input(mensagem))
+                return valor
+            except ValueError:
+                print("Valor inválido. Digite um número inteiro.")
