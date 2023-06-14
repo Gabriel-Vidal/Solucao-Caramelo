@@ -130,6 +130,15 @@ class SolucaoCaramelo:
         else:
             print("Não há animais cadastrados.")
 
+    def relatorio_pessoas(self):
+        if self.pessoas:
+            print("Relatório de pessoas:")
+            for pessoa in self.pessoas:
+                print(f"Nome: {pessoa.nome} | Telefone: {pessoa.telefone} | "
+                      f"Espécie de Interesse: {pessoa.especie_interesse} | Preferências: {pessoa.preferencias}")
+        else:
+            print("Não há pessoas cadastradas.")
+
     @staticmethod
     def ler_inteiro(mensagem):
         while True:
