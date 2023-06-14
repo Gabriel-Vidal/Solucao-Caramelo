@@ -22,28 +22,28 @@ class SolucaoCaramelo:
 
     def cadastrar_animal(self):
         while True:
-            tipo = input("Digite o tipo do animal: ")
+            tipo = input("Digite o tipo do animal (Cachorro, Gato, etc...: ").lower()
             if tipo.isalpha():
                 break
             else:
                 print("O tipo deve conter apenas letras. Tente novamente.")
 
         while True:
-            cor = input("Digite a cor do animal: ")
+            cor = input("Digite a cor do animal: ").lower()
             if cor.isalpha():
                 break
             else:
                 print("A cor deve conter apenas letras. Tente novamente.")
 
         while True:
-            porte = input("Digite o porte do animal: ")
+            porte = input("Digite o porte do animal: ").lower()
             if porte.isalpha():
                 break
             else:
                 print("O porte deve conter apenas letras. Tente novamente.")
 
         while True:
-            particularidade = input("Digite a particularidade do animal: ")
+            particularidade = input("Digite a particularidade do animal: ").lower()
             if particularidade.isalpha():
                 break
             else:
@@ -67,21 +67,21 @@ class SolucaoCaramelo:
 
     def cadastrar_pessoa(self):
         while True:
-            nome = input("Digite o nome da pessoa: ")
+            nome = input("Digite o nome da pessoa: ").lower()
             if nome.isalpha():
                 break
             else:
                 print("Nome inválido, por favor insira o nome da pessoa, corretamente!")
 
         while True:
-            especie_interesse = input("Digite a espécie de interesse para adoção: ")
+            especie_interesse = input("Digite a espécie de interesse para adoção: ").lower()
             if especie_interesse.isalpha():
                 break
             else:
                 print("Digite o nome da espécie corretamente!")
 
         while True:
-            preferencias = input("Digite as preferências de animal: ")
+            preferencias = input("Digite as preferências de animal: ").lower()
             if preferencias.isalpha():
                 break
             else:
@@ -107,14 +107,6 @@ class SolucaoCaramelo:
                 return self.cadastrar_pessoa()
             else:
                 print("Opção inválida. Digite 'S' para confirmar ou 'N' para rejeitar.")
-
-    def emitir_relatorio(self):
-        # Lógica para cruzar os dados e gerar o relatório
-        pass
-
-    def buscar_animais(self, caracteristicas):
-        # Lógica para buscar animais com base nas características informadas
-        pass
 
     @staticmethod
     def ler_inteiro(mensagem):
