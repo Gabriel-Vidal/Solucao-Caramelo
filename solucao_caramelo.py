@@ -1,6 +1,6 @@
 from animal import Animal
 from pessoa import Pessoa
-from utils import ler_inteiro
+
 
 class SolucaoCaramelo:
     def __init__(self):
@@ -143,6 +143,15 @@ class SolucaoCaramelo:
                       f"Particularidade: {animal.particularidade} | Idade: {animal.idade}")
         else:
             print("Nenhum animal encontrado com as características fornecidas.")
+
+    @staticmethod
+    def ler_inteiro(mensagem):
+        while True:
+            try:
+                valor = int(input(mensagem))
+                return valor
+            except ValueError:
+                print("Valor inválido. Digite um número inteiro.")
 
     def exibir_menu(self):
         print("----- Solução Caramelo -----")
