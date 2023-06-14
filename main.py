@@ -121,6 +121,15 @@ class SolucaoCaramelo:
         else:
             print("Opção inválida. Por favor, tente novamente.")
 
+    def relatorio_animais(self):
+        if self.animais:
+            print("Relatório de animais:")
+            for animal in self.animais:
+                print(f"Tipo: {animal.tipo} | Cor: {animal.cor} | Porte: {animal.porte} | "
+                      f"Particularidade: {animal.particularidade} | Idade: {animal.idade}")
+        else:
+            print("Não há animais cadastrados.")
+
     @staticmethod
     def ler_inteiro(mensagem):
         while True:
