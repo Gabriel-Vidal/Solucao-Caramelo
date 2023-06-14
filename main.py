@@ -52,8 +52,18 @@ class SolucaoCaramelo:
         idade = input("Digite a idade aproximada do animal: ")
 
         animal = Animal(tipo, idade, cor, porte, particularidade)
-        self.animais.append(animal)
-        print("Animal cadastrado com sucesso!")
+
+        while True:
+            confirmacao = input("Os dados inseridos estão corretos? (S/N): ")
+            if confirmacao.upper() == "S":
+                self.animais.append(animal)
+                print("Animal cadastrado com sucesso!")
+                break
+            elif confirmacao.upper() == "N":
+                print("Por favor, insira novamente os dados do animal:")
+                return self.cadastrar_animal()
+            else:
+                print("Opção inválida. Digite 'S' para confirmar ou 'N' para rejeitar.")
 
     def cadastrar_pessoa(self):
         nome = input("Digite o nome da pessoa: ")
