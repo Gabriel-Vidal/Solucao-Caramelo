@@ -49,7 +49,7 @@ class SolucaoCaramelo:
             else:
                 print("A particularidade deve conter apenas letras. Tente novamente.")
 
-        idade = input("Digite a idade aproximada do animal: ")
+        idade = self.ler_inteiro("Digite a idade aproximada do animal: ")
 
         animal = Animal(tipo, idade, cor, porte, particularidade)
 
