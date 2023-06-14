@@ -106,7 +106,20 @@ class SolucaoCaramelo:
                 print("Por favor, insira novamente os dados da pessoa:")
                 return self.cadastrar_pessoa()
             else:
-                print("Opção inválida. Digite 'S' para confirmar ou 'N' para rejeitar.")
+                print("Opção inválida. Digite 'S' para confirmar ou 'N' para rejeitar.")4
+
+    def emitir_relatorio(self):
+        print("Escolha o relatório:")
+        print("1 - Relatório de animais")
+        print("2 - Relatório de pessoas")
+        relatorio_opcao = input("Digite o número do relatório desejado: ")
+
+        if relatorio_opcao == "1":
+            self.relatorio_animais()
+        elif relatorio_opcao == "2":
+            self.relatorio_pessoas()
+        else:
+            print("Opção inválida. Por favor, tente novamente.")
 
     @staticmethod
     def ler_inteiro(mensagem):
