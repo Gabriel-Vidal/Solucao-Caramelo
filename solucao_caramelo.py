@@ -1,13 +1,5 @@
 from animal import Animal
-
-
-class Pessoa:
-    def __init__(self, nome, telefone, especie_interesse, preferencias):
-        self.nome = nome
-        self.telefone = telefone
-        self.especie_interesse = especie_interesse
-        self.preferencias = preferencias
-
+from pessoa import Pessoa
 
 class SolucaoCaramelo:
     def __init__(self):
