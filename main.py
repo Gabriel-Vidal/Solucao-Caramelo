@@ -21,23 +21,57 @@ class SolucaoCaramelo:
         self.pessoas = []
 
     def cadastrar_animal(self):
-        tipo = self.ler_string("Digite o tipo do animal: ")
-        idade = self.ler_inteiro("Digite a idade aproximada do animal: ")
-        cor = self.ler_string("Digite a cor do animal: ")
-        porte = self.ler_string("Digite o porte do animal: ")
-        particularidade = self.ler_string("Digite a particularidade do animal: ")
+        while True:
+            tipo = input("Digite o tipo do animal: ")
+            if tipo.isalpha():
+                break
+            else:
+                print("O tipo deve conter apenas letras. Tente novamente.")
+
+        while True:
+            cor = input("Digite a cor do animal: ")
+            if cor.isalpha():
+                break
+            else:
+                print("A cor deve conter apenas letras. Tente novamente.")
+
+        while True:
+            porte = input("Digite o porte do animal: ")
+            if porte.isalpha():
+                break
+            else:
+                print("O porte deve conter apenas letras. Tente novamente.")
+
+        while True:
+            particularidade = input("Digite a particularidade do animal: ")
+            if particularidade.isalpha():
+                break
+            else:
+                print("A particularidade deve conter apenas letras. Tente novamente.")
+
+        idade = input("Digite a idade aproximada do animal: ")
 
         animal = Animal(tipo, idade, cor, porte, particularidade)
         self.animais.append(animal)
+        print("Animal cadastrado com sucesso!")
 
     def cadastrar_pessoa(self):
-        nome = self.ler_string("Digite o nome da pessoa: ")
-        telefone = self.ler_string("Digite o telefone da pessoa: ")
-        especie_interesse = self.ler_string("Digite a espécie de interesse para adoção: ")
-        preferencias = self.ler_string("Digite as preferências de animal: ")
+        nome = input("Digite o nome da pessoa: ")
+        telefone = input("Digite o telefone da pessoa: ")
+        especie_interesse = input("Digite a espécie de interesse para adoção: ")
+        preferencias = input("Digite as preferências de animal: ")
 
         pessoa = Pessoa(nome, telefone, especie_interesse, preferencias)
         self.pessoas.append(pessoa)
+        print("Pessoa cadastrada com sucesso!")
+
+    def emitir_relatorio(self):
+        # Lógica para cruzar os dados e gerar o relatório
+        pass
+
+    def buscar_animais(self, caracteristicas):
+        # Lógica para buscar animais com base nas características informadas
+        pass
 
     @staticmethod
     def ler_inteiro(mensagem):
@@ -48,10 +82,40 @@ class SolucaoCaramelo:
             except ValueError:
                 print("Valor inválido. Digite um número inteiro.")
 
-    @staticmethod
-    def ler_string(mensagem):
-        while True:
-            valor = input(mensagem)
-            if valor:
-                return valor
-            print("Valor inválido. Digite uma string não vazia.")
+
+    def exibir_menu(self):
+        print("----- Solução Caramelo -----")
+        print("1 - Cadastrar animal")
+        print("2 - Cadastrar pessoa")
+        print("3 - Emitir relatório")
+        print("4 - Buscar animais")
+        print("0 - Sair")
+
+    def executar_opcao(self, opcao):
+        if opcao == "1":
+            self.cadastrar_animal()
+        elif opcao == "2":
+            self.cadastrar_pessoa()
+        elif opcao == "3":
+            self.emitir_relatorio()
+        elif opcao == "4":
+            caracteristicas = input("Digite as características para busca: ")
+            self.buscar_animais(caracteristicas)
+        elif opcao == "0":
+            return False
+        else:
+            print("Opção inválida. Por favor, tente novamente.")
+
+        return True
+
+    def executar(self):
+        executando = True
+
+        while executando:
+            self.exibir_menu()
+            opcao = input("Digite a opção desejada: ")
+            executando = self.executar_opcao(opcao)
+
+# Instanciar e executar o sistema
+sistema = SolucaoCaramelo()
+sistema.executar()
