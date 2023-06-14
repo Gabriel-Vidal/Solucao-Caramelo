@@ -66,10 +66,28 @@ class SolucaoCaramelo:
                 print("Opção inválida. Digite 'S' para confirmar ou 'N' para rejeitar.")
 
     def cadastrar_pessoa(self):
-        nome = input("Digite o nome da pessoa: ")
+        while True:
+            nome = input("Digite o nome da pessoa: ")
+            if nome.isalpha():
+                break
+            else:
+                print("Nome inválido, por favor insira o nome da pessoa, corretamente!")
+
+        while True:
+            especie_interesse = input("Digite a espécie de interesse para adoção: ")
+            if especie_interesse.isalpha():
+                break
+            else:
+                print("Digite o nome da espécie corretamente!")
+
+        while True:
+            preferencias = input("Digite as preferências de animal: ")
+            if preferencias.isalpha():
+                break
+            else:
+                print("Digite a preferências pelo animal corretamente!")
+
         telefone = input("Digite o telefone da pessoa: ")
-        especie_interesse = input("Digite a espécie de interesse para adoção: ")
-        preferencias = input("Digite as preferências de animal: ")
 
         pessoa = Pessoa(nome, telefone, especie_interesse, preferencias)
         self.pessoas.append(pessoa)
