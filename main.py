@@ -87,7 +87,12 @@ class SolucaoCaramelo:
             else:
                 print("Digite a preferências pelo animal corretamente!")
 
-        telefone = input("Digite o telefone da pessoa: ")
+        while True:
+            telefone = input("Digite o telefone da pessoa: Ex:(DDDXXXXXXXXX): ")
+            if telefone.isalnum() and len(telefone) == 11:
+                break
+            else:
+                print("Digite um telefone válido com 11 números incluido DDD, conforme o exemplo!")
 
         pessoa = Pessoa(nome, telefone, especie_interesse, preferencias)
 
