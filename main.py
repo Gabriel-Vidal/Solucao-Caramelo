@@ -142,6 +142,21 @@ class SolucaoCaramelo:
         else:
             print("Não há pessoas cadastradas.")
 
+    def buscar_animais(self, caracteristicas):
+        resultados = []
+        for animal in self.animais:
+            if caracteristicas.lower() in animal.tipo.lower() or caracteristicas.lower() in animal.cor.lower() or \
+                    caracteristicas.lower() in animal.porte.lower() or caracteristicas.lower() in animal.particularidade.lower():
+                resultados.append(animal)
+
+        if resultados:
+            print("----- Resultados da busca -----")
+            for animal in resultados:
+                print(f"Tipo: {animal.tipo} | Cor: {animal.cor} | Porte: {animal.porte} | "
+                      f"Particularidade: {animal.particularidade} | Idade: {animal.idade}")
+        else:
+            print("Nenhum animal encontrado com as características fornecidas.")
+
     @staticmethod
     def ler_inteiro(mensagem):
         while True:
