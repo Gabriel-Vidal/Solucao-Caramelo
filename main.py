@@ -90,8 +90,18 @@ class SolucaoCaramelo:
         telefone = input("Digite o telefone da pessoa: ")
 
         pessoa = Pessoa(nome, telefone, especie_interesse, preferencias)
-        self.pessoas.append(pessoa)
-        print("Pessoa cadastrada com sucesso!")
+
+        while True:
+            confirmacao = input("Os dados inseridos estão corretos? (S/N): ")
+            if confirmacao.upper() == "S":
+                self.pessoas.append(pessoa)
+                print("Pessoa cadastrada com sucesso!")
+                break
+            elif confirmacao.upper() == "N":
+                print("Por favor, insira novamente os dados da pessoa:")
+                return self.cadastrar_pessoa()
+            else:
+                print("Opção inválida. Digite 'S' para confirmar ou 'N' para rejeitar.")
 
     def emitir_relatorio(self):
         # Lógica para cruzar os dados e gerar o relatório
