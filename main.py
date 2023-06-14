@@ -80,12 +80,8 @@ class SolucaoCaramelo:
             else:
                 print("Digite o nome da espécie corretamente!")
 
-        while True:
-            preferencias = input("Digite as preferências de animal: ").lower()
-            if preferencias.isalpha():
-                break
-            else:
-                print("Digite a preferências pelo animal corretamente!")
+
+        preferencias = self.ler_inteiro("Digite sua preferência de idade do animal: ")
 
         while True:
             telefone = input("Digite o telefone da pessoa: Ex:(DDDXXXXXXXXX): ")
@@ -106,7 +102,7 @@ class SolucaoCaramelo:
                 print("Por favor, insira novamente os dados da pessoa:")
                 return self.cadastrar_pessoa()
             else:
-                print("Opção inválida. Digite 'S' para confirmar ou 'N' para rejeitar.")4
+                print("Opção inválida. Digite 'S' para confirmar ou 'N' para rejeitar.")
 
     def emitir_relatorio(self):
         print("Escolha o relatório:")
@@ -123,19 +119,26 @@ class SolucaoCaramelo:
 
     def relatorio_animais(self):
         if self.animais:
-            print("Relatório de animais:")
+            print("----- Relatório de animais -----")
             for animal in self.animais:
-                print(f"Tipo: {animal.tipo} | Cor: {animal.cor} | Porte: {animal.porte} | "
-                      f"Particularidade: {animal.particularidade} | Idade: {animal.idade}")
+                print(f"Tipo: {animal.tipo}\n"
+                      f"Cor: {animal.cor}\n"
+                      f"Porte: {animal.porte}\n"
+                      f"Particularidade: {animal.particularidade}\n"
+                      f"Idade: {animal.idade}")
+                print("-=-"*30)
         else:
             print("Não há animais cadastrados.")
 
     def relatorio_pessoas(self):
         if self.pessoas:
-            print("Relatório de pessoas:")
+            print("----- Relatório de pessoas -----")
             for pessoa in self.pessoas:
-                print(f"Nome: {pessoa.nome} | Telefone: {pessoa.telefone} | "
-                      f"Espécie de Interesse: {pessoa.especie_interesse} | Preferências: {pessoa.preferencias}")
+                print(f"Nome: {pessoa.nome}\n"
+                      f"Telefone: {pessoa.telefone}\n"
+                      f"Espécie de Interesse: {pessoa.especie_interesse}\n"
+                      f"Preferência de idade do animal: {pessoa.preferencias}")
+                print("-=-"*30)
         else:
             print("Não há pessoas cadastradas.")
 
