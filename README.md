@@ -2,7 +2,7 @@
 
 ## Alunos: <br> Lucas Cerqueira F. Carneiro - 202211189 <br> Gabriel Bastos Vidal - 202212035
 
-## <a><a href="https://github.com/marciogarridoLaCop">Professor: Márcio Garrido</a></a> 
+## <a href="https://github.com/marciogarridoLaCop">Professor: Márcio Garrido</a> 
 ## Engenharia de Software 
 #
 <br>
@@ -24,7 +24,7 @@ Os alunos anotaram atentamente a todas as observações, criaram o fluxograma do
 
 ![cachorro](./Imagens/cachorro.jpg)
 
-## Este é um programa que permite cadastrar animais e pessoas, emitir relatórios e realizar buscas de animais com base em suas características. A solução é implementada usando a linguagem Python.
+ Este é um programa que permite cadastrar animais e pessoas, emitir relatórios e realizar buscas de animais com base em suas características. A solução é implementada usando a linguagem Python.
 #
 <br>
 
@@ -34,23 +34,31 @@ Os alunos anotaram atentamente a todas as observações, criaram o fluxograma do
  - <strong>Cadastrar Animal:</strong> O programa permite cadastrar informações sobre animais, como tipo, cor, porte, particularidade e idade aproximada. Ele solicita os dados ao usuário e, em seguida, cria um objeto Animal com essas informações e o adiciona à lista de animais cadastrados.
  ![fluxo1](./Imagens/fluxo_animais.png)
 ![animais](./Imagens/Screenshot_1.png)
+#
 
 - <strong>Cadastrar Pessoa:</strong> O programa permite cadastrar informações sobre pessoas interessadas em adoção de animais. É solicitado o nome da pessoa, a espécie de interesse para adoção, as preferências de animal e o telefone de contato. Em seguida, um objeto Pessoa é criado com essas informações e adicionado à lista de pessoas cadastradas.<br>
 ![fluxo2](./Imagens/fluxo_pessoas.png)
 ![pessoas](./Imagens/pessoa.png)
-
+#
 - <strong>Emitir Relatório:</strong> O usuário pode escolher emitir diferentes relatórios. Existem três opções:
 <br>
 
 ![relatorio](./Imagens/relatorio.png)
-
+#
  - <strong>Relatório de Animais:</strong> Exibe uma lista com informações de todos os animais cadastrados, incluindo tipo, cor, porte, particularidade e idade.
 ![relatorio_animais](./Imagens/rela_animal.png)
+#
 - <strong>Relatório de Pessoas:</strong> Mostra uma lista com informações de todas as pessoas cadastradas, incluindo nome, telefone, espécie de interesse e preferências de idade de animal.
 ![relatorio_pessoas](./Imagens/rela_pessoa.png)
-- <strong>Relatório de Compatibilidade:</strong> Gera um relatório mostrando quais animais são compatíveis com as preferências das pessoas cadastradas. Compara a espécie de interesse e as preferências de cor, porte e idade entre os animais e as pessoas, mostrando os resultados.
-![fluxo3](./Imagens/fluxo_cruzamento.png)
+#
+- <strong>Relatório de Compatibilidade:</strong> Gera um relatório mostrando quais animais são compatíveis com as preferências das pessoas cadastradas.
+![fluxo3](./Imagens/compativel.png)
+Compara a espécie de interesse e as preferências de cor, porte e idade entre os animais e as pessoas, mostrando os resultados.
 ![compatibilidade](./Imagens/compatibilidade.png)
+![fluxo3](./Imagens/fluxo_cruzamento.png)
+
+
+#
 - <strong>Buscar Animais:</strong> Permite ao usuário buscar animais com base em características específicas. O usuário pode inserir uma palavra-chave relacionada ao tipo, cor, porte ou particularidade do animal.
 <br>
 
