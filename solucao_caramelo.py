@@ -9,34 +9,38 @@ class SolucaoCaramelo:
 
     def cadastrar_animal(self):
         while True:
-            tipo = input("Digite o tipo do animal (Cachorro, Gato, etc...: ").lower()
-            if tipo.isalpha():
+            tipo = input("Digite o tipo do animal (Cachorro, Gato, etc...): ").lower()
+            if tipo.strip() == '':
+                print("O tipo não pode ser vazio. Tente novamente.")
+            elif all(caractere.isalpha() or caractere.isspace() for caractere in tipo):
                 break
             else:
                 print("O tipo deve conter apenas letras. Tente novamente.")
 
         while True:
             cor = input("Digite a cor do animal: ").lower()
-            if cor.isalpha():
+            if cor.strip() == '':
+                print("A cor não pode ser vazia. Tente novamente.")
+            elif all(caractere.isalpha() or caractere.isspace() for caractere in cor):
                 break
             else:
                 print("A cor deve conter apenas letras. Tente novamente.")
 
         while True:
-            porte = input("Digite o porte do animal: ").lower()
-            if porte.isalpha():
+            porte = input("Digite o porte do animal (Grande, Médio ou Pequeno): ").lower()
+            if porte.isalpha() and porte in ['grande', 'medio', 'pequeno']:
                 break
             else:
-                print("O porte deve conter apenas letras. Tente novamente.")
+                print("Porte do animal inválido. Tente novamente.")
 
         while True:
-            particularidade = input("Digite a particularidade do animal: ").lower()
-            if particularidade.isalpha():
-                break
+            particularidade = str(input("Digite a particularidade do animal: ")).lower()
+            if particularidade.strip() == '':
+                print("a particularidade do animal não pode ser vazia. Tente novamente.")
             else:
-                print("A particularidade deve conter apenas letras. Tente novamente.")
+                break
 
-        idade = self.ler_inteiro("Digite a idade aproximada do animal: ")
+        idade = str(input("Digite a idade aproximada do animal: "))
 
         animal = Animal(tipo, idade, cor, porte, particularidade)
 
@@ -55,27 +59,27 @@ class SolucaoCaramelo:
     def cadastrar_pessoa(self):
         while True:
             nome = input("Digite o nome da pessoa: ").lower()
-            if nome.isalpha():
+            if all(caractere.isalpha() or caractere.isspace() for caractere in nome):
                 break
             else:
                 print("Nome inválido, por favor insira o nome da pessoa, corretamente!")
 
         while True:
             especie_interesse = input("Digite a espécie de interesse para adoção: ").lower()
-            if especie_interesse.isalpha():
+            if all(caractere.isalpha() or caractere.isspace() for caractere in especie_interesse):
                 break
             else:
                 print("Digite o nome da espécie corretamente!")
 
 
-        preferencias = self.ler_inteiro("Digite sua preferência de idade do animal: ")
+        preferencias = str(input("Digite sua preferência do animal: "))
 
         while True:
             telefone = input("Digite o telefone da pessoa: Ex:(DDDXXXXXXXXX): ")
             if telefone.isalnum() and len(telefone) == 11:
                 break
             else:
-                print("Digite um telefone válido com 11 números incluido DDD, conforme o exemplo!")
+                print("Digite um telefone válido com 11 números incluindo o DDD, conforme o exemplo!")
 
         pessoa = Pessoa(nome, telefone, especie_interesse, preferencias)
 
@@ -143,15 +147,6 @@ class SolucaoCaramelo:
                       f"Particularidade: {animal.particularidade} | Idade: {animal.idade}")
         else:
             print("Nenhum animal encontrado com as características fornecidas.")
-
-    @staticmethod
-    def ler_inteiro(mensagem):
-        while True:
-            try:
-                valor = int(input(mensagem))
-                return valor
-            except ValueError:
-                print("Valor inválido. Digite um número inteiro.")
 
     def exibir_menu(self):
         print("----- Solução Caramelo -----")
