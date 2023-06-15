@@ -157,6 +157,29 @@ class SolucaoCaramelo:
         else:
             print("Não há pessoas ou animais cadastrados suficientes para gerar o relatório de compatibilidade.")
 
+    def selecionar_animais_compativeis(self):
+        animais_compativeis = []
+
+        for pessoa in self.pessoas:
+            for animal in self.animais:
+                if (animal.tipo.lower() == pessoa.especie_interesse.lower()
+                        and ( animal.cor.lower() == pessoa.preferencias.lower()
+                              or animal.porte.lower() == pessoa.preferencias.lower()
+                              or animal.idade == pessoa.preferencias.lower)):
+                    animais_compativeis.append((pessoa, animal))
+
+        if animais_compativeis:
+            print("----- Animais compatíveis com as preferências das pessoas -----")
+            for pessoa, animal in animais_compativeis:
+                print(f"Nome da pessoa: {pessoa.nome}\n"
+                      f"Telefone da pessoa: {pessoa.telefone}\n"
+                      f"Animal compatível:\n"
+                      f"Tipo: {animal.tipo} | Cor: {animal.cor} | Porte: {animal.porte} | "
+                      f"Particularidade: {animal.particularidade} | Idade: {animal.idade}")
+                print("-=-" * 30)
+        else:
+            print("Não há animais compatíveis com as preferências das pessoas.")
+
     def exibir_menu(self):
         print("----- Solução Caramelo -----")
         print("1 - Cadastrar animal")
