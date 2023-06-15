@@ -1,3 +1,5 @@
+![logo_uni](./Imagens/logo_uni.png)
+
 ## Alunos: <br> Lucas Cerqueira F. Carneiro - 202211189 <br> Gabriel Bastos Vidal - 202212035
 
 ## <a><a href="https://github.com/marciogarridoLaCop">Professor: Márcio Garrido</a></a> 
