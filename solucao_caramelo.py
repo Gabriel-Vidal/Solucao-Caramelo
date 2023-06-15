@@ -151,6 +151,12 @@ class SolucaoCaramelo:
         else:
             print("Nenhum animal encontrado com as características fornecidas.")
 
+    def relatorio_compatibilidade(self):
+        if self.pessoas and self.animais:
+            self.selecionar_animais_compativeis()
+        else:
+            print("Não há pessoas ou animais cadastrados suficientes para gerar o relatório de compatibilidade.")
+
     def exibir_menu(self):
         print("----- Solução Caramelo -----")
         print("1 - Cadastrar animal")
