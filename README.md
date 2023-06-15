@@ -36,7 +36,9 @@ Os alunos anotaram atentamente a todas as observações, criaram o fluxograma do
 ![animais](./Imagens/Screenshot_1.png)
 #
 
-- <strong>Cadastrar Pessoa:</strong> O programa permite cadastrar informações sobre pessoas interessadas em adoção de animais. É solicitado o nome da pessoa, a espécie de interesse para adoção, as preferências de animal e o telefone de contato. Em seguida, um objeto Pessoa é criado com essas informações e adicionado à lista de pessoas cadastradas.<br>
+- <strong>Cadastrar Pessoa:</strong> O programa permite cadastrar informações sobre pessoas interessadas em adoção de animais. É solicitado o nome da pessoa, a espécie de interesse para adoção, as preferências de animal e o telefone de contato. Em seguida, um objeto Pessoa é criado com essas informações e adicionado à lista de pessoas cadastradas.
+<br>
+
 ![fluxo2](./Imagens/fluxo_pessoas.png)
 ![pessoas](./Imagens/pessoa.png)
 #
@@ -46,9 +48,11 @@ Os alunos anotaram atentamente a todas as observações, criaram o fluxograma do
 ![relatorio](./Imagens/relatorio.png)
 #
  - <strong>Relatório de Animais:</strong> Exibe uma lista com informações de todos os animais cadastrados, incluindo tipo, cor, porte, particularidade e idade.
+ ![codigo_relatorio_animais](./Imagens/code_animais.png)
 ![relatorio_animais](./Imagens/rela_animal.png)
 #
 - <strong>Relatório de Pessoas:</strong> Mostra uma lista com informações de todas as pessoas cadastradas, incluindo nome, telefone, espécie de interesse e preferências de idade de animal.
+![codigo_relatorio_animais](./Imagens/code_pessoas.png)
 ![relatorio_pessoas](./Imagens/rela_pessoa.png)
 #
 - <strong>Relatório de Compatibilidade:</strong> Gera um relatório mostrando quais animais são compatíveis com as preferências das pessoas cadastradas.
