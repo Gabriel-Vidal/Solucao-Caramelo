@@ -124,10 +124,7 @@ class SolucaoCaramelo:
         if self.pessoas:
             print("----- Relatório de pessoas -----")
             for pessoa in self.pessoas:
-                print(f"Nome: {pessoa.nome}\n"
-                      f"Telefone: {pessoa.telefone}\n"
-                      f"Espécie de Interesse: {pessoa.especie_interesse}\n"
-                      f"Preferência de idade do animal: {pessoa.preferencias}")
+                print(f"Nome: {pessoa.nome} | Telefone: {pessoa.telefone} | Espécie de Interesse: {pessoa.especie_interesse} | Preferência de idade do animal: {pessoa.preferencias}")
                 print("-=-"*30)
         else:
             print("Não há pessoas cadastradas.")
