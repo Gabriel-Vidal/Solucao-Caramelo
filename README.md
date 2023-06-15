@@ -26,8 +26,11 @@ Os alunos anotaram atentamente a todas as observações, criaram o fluxograma do
 #
 <br>
 
+
  # Funcionalidades do projeto
+
  - <strong>Cadastrar Animal:</strong> O programa permite cadastrar informações sobre animais, como tipo, cor, porte, particularidade e idade aproximada. Ele solicita os dados ao usuário e, em seguida, cria um objeto Animal com essas informações e o adiciona à lista de animais cadastrados.
+ ![fluxo1](./Imagens/fluxo_animais.png)
 ![animais](./Imagens/Screenshot_1.png)
 
 - <strong>Cadastrar Pessoa:</strong> O programa permite cadastrar informações sobre pessoas interessadas em adoção de animais. É solicitado o nome da pessoa, a espécie de interesse para adoção, as preferências de animal e o telefone de contato. Em seguida, um objeto Pessoa é criado com essas informações e adicionado à lista de pessoas cadastradas.
