@@ -115,11 +115,7 @@ class SolucaoCaramelo:
         if self.animais:
             print("----- Relatório de animais -----")
             for animal in self.animais:
-                print(f"Tipo: {animal.tipo}\n"
-                      f"Cor: {animal.cor}\n"
-                      f"Porte: {animal.porte}\n"
-                      f"Particularidade: {animal.particularidade}\n"
-                      f"Idade: {animal.idade}")
+                print(f"Tipo: {animal.tipo} | Cor: {animal.cor} | Porte: {animal.porte} | Particularidade: {animal.particularidade} | Idade: {animal.idade}")
                 print("-=-"*30)
         else:
             print("Não há animais cadastrados.")
