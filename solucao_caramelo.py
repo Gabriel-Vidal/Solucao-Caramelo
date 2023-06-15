@@ -105,6 +105,8 @@ class SolucaoCaramelo:
             self.relatorio_animais()
         elif relatorio_opcao == "2":
             self.relatorio_pessoas()
+        elif relatorio_opcao == "3":
+            self.relatorio_compatibilidade()
         else:
             print("Opção inválida. Por favor, tente novamente.")
 
