@@ -21,8 +21,10 @@ Este é um programa que permite cadastrar animais e pessoas, emitir relatórios 
 ![compatibilidade](./Imagens/compatibilidade.png)
 - Buscar Animais: Permite ao usuário buscar animais com base em características específicas. O usuário pode inserir uma palavra-chave relacionada ao tipo, cor, porte ou particularidade do animal. O programa então busca na lista de animais cadastrados e exibe os resultados correspondentes.
 
-Feito por: 
+Feito por:
+
 Gabriel Vidal
+
 Lucas Cerqueira
 
 Professor: <a href="https://github.com/marciogarridoLaCop">Marcio Garrido</a>
