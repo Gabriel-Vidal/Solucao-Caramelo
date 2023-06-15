@@ -99,6 +99,7 @@ class SolucaoCaramelo:
         print("Escolha o relatório:")
         print("1 - Relatório de animais")
         print("2 - Relatório de pessoas")
+        print("3 - Relatório de compatibilidade")
         relatorio_opcao = input("Digite o número do relatório desejado: ")
 
         if relatorio_opcao == "1":
