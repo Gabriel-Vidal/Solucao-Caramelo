@@ -33,7 +33,8 @@ Os alunos anotaram atentamente a todas as observações, criaram o fluxograma do
  ![fluxo1](./Imagens/fluxo_animais.png)
 ![animais](./Imagens/Screenshot_1.png)
 
-- <strong>Cadastrar Pessoa:</strong> O programa permite cadastrar informações sobre pessoas interessadas em adoção de animais. É solicitado o nome da pessoa, a espécie de interesse para adoção, as preferências de animal e o telefone de contato. Em seguida, um objeto Pessoa é criado com essas informações e adicionado à lista de pessoas cadastradas.
+- <strong>Cadastrar Pessoa:</strong> O programa permite cadastrar informações sobre pessoas interessadas em adoção de animais. É solicitado o nome da pessoa, a espécie de interesse para adoção, as preferências de animal e o telefone de contato. Em seguida, um objeto Pessoa é criado com essas informações e adicionado à lista de pessoas cadastradas.<br>
+![fluxo1](./Imagens/fluxo_pessoas.png)
 ![pessoas](./Imagens/pessoa.png)
 
 - <strong>Emitir Relatório:</strong> O usuário pode escolher emitir diferentes relatórios. Existem três opções:
