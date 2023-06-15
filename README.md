@@ -1,6 +1,7 @@
 # ALunos: <br> Lucas Cerqueira F. Carneiro - 202211189 <br> Gabriel Bastos Vidal - 202212035
 
-# Professor: Márcio Garrido <br> <a href="https://github.com/marciogarridoLaCop"></a>
+# Professor: Márcio Garrido 
+<a href="https://github.com/marciogarridoLaCop"></a>
 
 # Solução Caramelo
 
