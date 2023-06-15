@@ -20,3 +20,9 @@ Este é um programa que permite cadastrar animais e pessoas, emitir relatórios 
 - Relatório de Compatibilidade: Gera um relatório mostrando quais animais são compatíveis com as preferências das pessoas cadastradas. Compara a espécie de interesse e as preferências de cor, porte e idade entre os animais e as pessoas, mostrando os resultados.
 ![compatibilidade](./Imagens/compatibilidade.png)
 - Buscar Animais: Permite ao usuário buscar animais com base em características específicas. O usuário pode inserir uma palavra-chave relacionada ao tipo, cor, porte ou particularidade do animal. O programa então busca na lista de animais cadastrados e exibe os resultados correspondentes.
+
+Feito por: 
+Gabriel Vidal
+Lucas Cerqueira
+
+Professor: <a href="https://github.com/marciogarridoLaCop">Marcio Garrido</a>
