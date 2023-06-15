@@ -38,8 +38,11 @@ Os alunos anotaram atentamente a todas as observações, criaram o fluxograma do
 ![pessoas](./Imagens/pessoa.png)
 
 - <strong>Emitir Relatório:</strong> O usuário pode escolher emitir diferentes relatórios. Existem três opções:
+<br>
 
-- <strong>Relatório de Animais:</strong> Exibe uma lista com informações de todos os animais cadastrados, incluindo tipo, cor, porte, particularidade e idade.
+![relatorio](./Imagens/relatorio.png)
+
+ - <strong>Relatório de Animais:</strong> Exibe uma lista com informações de todos os animais cadastrados, incluindo tipo, cor, porte, particularidade e idade.
 ![relatorio_animais](./Imagens/rela_animal.png)
 - <strong>Relatório de Pessoas:</strong> Mostra uma lista com informações de todas as pessoas cadastradas, incluindo nome, telefone, espécie de interesse e preferências de idade de animal.
 ![relatorio_pessoas](./Imagens/rela_pessoa.png)
@@ -49,11 +52,11 @@ Os alunos anotaram atentamente a todas as observações, criaram o fluxograma do
 - <strong>Buscar Animais:</strong> Permite ao usuário buscar animais com base em características específicas. O usuário pode inserir uma palavra-chave relacionada ao tipo, cor, porte ou particularidade do animal.
 <br>
 
-
+![buscar_animais](./Imagens/buscar_animais.png)
 <br>
 
 O programa então busca na lista de animais cadastrados e exibe os resultados correspondentes.
 
 <br>
 
-
+![buscar_resultado](./Imagens/buscar_resultado.png)
