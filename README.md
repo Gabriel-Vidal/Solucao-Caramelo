@@ -47,17 +47,17 @@ Os alunos anotaram atentamente a todas as observações, criaram o fluxograma do
 
 ![relatorio](./Imagens/relatorio.png)
 #
- - <strong>Relatório de Animais:</strong> Exibe uma lista com informações de todos os animais cadastrados, incluindo tipo, cor, porte, particularidade e idade.
+ - <strong>Relatório de Animais:</strong> Exibe uma lista com informações de todos os animais cadastrados, incluindo tipo, cor, porte, particularidade e idade.<br>
  ![codigo_relatorio_animais](./Imagens/code_animais.png)
 ![relatorio_animais](./Imagens/rela_animal.png)
 #
-- <strong>Relatório de Pessoas:</strong> Mostra uma lista com informações de todas as pessoas cadastradas, incluindo nome, telefone, espécie de interesse e preferências de idade de animal.
+- <strong>Relatório de Pessoas:</strong> Mostra uma lista com informações de todas as pessoas cadastradas, incluindo nome, telefone, espécie de interesse e preferências de idade de animal.<br>
 ![codigo_relatorio_animais](./Imagens/code_pessoas.png)
 ![relatorio_pessoas](./Imagens/rela_pessoa.png)
 #
-- <strong>Relatório de Compatibilidade:</strong> Gera um relatório mostrando quais animais são compatíveis com as preferências das pessoas cadastradas.
-![fluxo3](./Imagens/compativel.png)
-Compara a espécie de interesse e as preferências de cor, porte e idade entre os animais e as pessoas, mostrando os resultados.
+- <strong>Relatório de Compatibilidade:</strong> Gera um relatório mostrando quais animais são compatíveis com as preferências das pessoas cadastradas.<br>
+![fluxo3](./Imagens/compativel.png)<br>
+Compara a espécie de interesse e as preferências de cor, porte e idade entre os animais e as pessoas, mostrando os resultados.<br>
 ![compatibilidade](./Imagens/compatibilidade.png)
 ![fluxo3](./Imagens/fluxo_cruzamento.png)
 
